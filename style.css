@@ -1,0 +1,122 @@
+
+
+body{
+    font-size: 3vh;
+    /* font-stretch: condensed; */
+    font-weight: bold;
+    font-family: Verdana;
+    margin: 1vh;
+    /* background-color: rgb(32, 32, 32); */
+}
+#container{
+    display: grid;
+    grid-template-columns: 0.8fr repeat(5, 1fr);
+    column-gap: 1vh;
+}
+
+
+
+.zi, .ora{
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+    row-gap: 1vh;
+    height: 98vh;
+}
+
+
+.liber{
+    grid-row: span 1;
+    background-color: rgb(204, 235, 245);
+}
+
+
+
+.doua{
+    grid-row: span 2;
+    background-color: lightsteelblue;
+}
+
+.trei{
+    grid-row: span 3;
+    background-color: lightsteelblue;
+}
+.patru{
+    grid-row: span 4;
+    background-color: lightsteelblue;
+}
+
+.liber, .doua, .trei, .patru, .numezi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+}
+
+.ora div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 109, 139);
+    font-size: 2.4vh;
+}
+
+.ora div div{
+    display: block;
+}
+
+.ora div sup{
+    font-size: 1.5vh;
+}
+
+.doua:hover, .trei:hover, .patru:hover{
+    background-color: rgb(79, 90, 110);
+}
+
+.numezi, .ora .liber{
+    background-color:rgb(6, 52, 68);
+    color: white;
+}
+
+#mobil{
+    display: none;
+}
+
+/* #luni{
+    display: none;
+} */
+
+@media only screen and (min-width: 1400px) {
+    #container{
+        grid-template-columns: 0.75fr repeat(5, 1fr);
+        background-color: white;
+        border: 1vh solid white;
+        margin: 5vh;
+    }
+    
+    body{
+        background-color: rgb(29, 29, 29);
+    }
+
+    .zi, .ora{
+        height: 88vh;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #container{
+        grid-template-columns: 0.5fr 1fr;
+        width: 90%;
+        background-color: white;
+        margin: 1vh  auto 9vh auto;
+        border: 1vh solid white;
+    }
+    body{
+        background-color: rgb(29, 29, 29);
+    }
+    .zi, .ora{
+        height: 88vh;
+    }
+}
+
