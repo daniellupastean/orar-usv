@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <div id="container">
         <div class="ora">
             <div class="liber"></div>
@@ -59,7 +58,7 @@
         </div>
         <div class="zi" id="luni">
             <div class="numezi">Luni</div>
-            <a href="#" class="patru">
+            <a href="https://meet.google.com/lookup/cr7bpqcyyf?authuser=1" class="patru">
                 <div>PCLP3</div>
             </a>
             <div class="liber"></div>
@@ -389,7 +388,8 @@
 
         // }
         function telefon() {
-            if (window.innerWidth <= 950) {
+            var w = window.innerWidth;
+            if (w <= 950) {
                 var myDate = new Date();
                 var myDay = myDate.getDay();
                 var zile = ["luni", "marti", "miercuri", "joi", "vineri"];
@@ -404,6 +404,10 @@
                 }
                 else if (myDay == 6) {
                     document.getElementById("sambata").style.display = "grid";
+                    document.getElementById("duminica").style.display = "none";
+                }
+                else {
+                    document.getElementById("sambata").style.display = "none";
                     document.getElementById("duminica").style.display = "none";
                 }
             }
