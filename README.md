@@ -1,4 +1,4 @@
-## Courses Schedule - USV - FIESC - Computers - 2021
+## Courses Schedule Webpage - USV - FIESC - Computers - 2021
 ### Personal Project
 
 - used for a simpler access to online meeting for each course
